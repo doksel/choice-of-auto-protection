@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+}
+
+.btn{
+    height: 30px;
+    margin: 10px auto;
+    color: white;
+}
+
+.btn_black{
+    background: rgb(37, 46, 57);
+    width: 210px;
+    position: relative;
+}
+.btn_red{
+    background: rgb(235, 83, 70);
+    width: 315px;
+    position: relative;
+}
+.triangle{
+    /* content: '';  */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 150px; bottom: -30px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid rgb(235, 83, 70); /* Добавляем треугольник */
+    display: none;
+   }
+body{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header{
+    background: rgb(235, 83, 70);
+    text-align: center;
+    height: 90px;   
+}
+
+header h2{
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.car{
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.carImg{
+    width: 300px;
+    height: 170px;
+    margin: 10px;
+}
+
+.details_car{
+    width: 70%;
+}
+
+.menu{
+    width: 30%;
+    height: 100%;
+    border-left: solid grey 2px;
+}
+
+li{
+    color: black;
+    font-size: 14px;
+    display: block;
+    height: 20px;
+    width: 170px;
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+li:hover, li:active{
+    background: rgb(235, 83, 70);
+    color: white;
+}
+li:hover::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: -30px; bottom: 0px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-right: 15px solid rgb(235, 83, 70); /* Добавляем треугольник */
+   }
+
+li:last-child:hover{
+    background: rgb(39, 38, 38);
+    color: white;
+}
+li:last-child:hover::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: -30px; bottom: 0px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-right: 15px solid rgb(39, 38, 38); /* Добавляем треугольник */
+   }
+
+.partials ul li:last-child:hover{
+    background: rgb(235, 83, 70);
+}
+
+.carDetailsImg{
+    width: 500px;height: 300px;
+}
+
+.partsOfPartialPlan{
+    width: 80%;
+    height: 70px;
+    padding: 5px;
+    font-size: 10px;
+    justify-content: space-around;
+}
+.onePartOfPartialPlan{
+    width: 50px;height: 50px;
+    margin: 3px 5px;
+    text-align: center;
+}
+.imgPartOfPartialPlan{
+    width: 50px;height: 25px;
+}
+.textPartOfPartialPlan{
+    color: rgb(235, 83, 70);
+    text-align: center;
+}
+
+.price{
+    color: rgb(39, 38, 38);
+    justify-content: space-around;
+    margin: 10px;
+}
+.price div {
+    width: 50%;
+}
+.price span{
+    color: rgb(235, 83, 70);
+}
+.price .price_down{
+    width: 100%;
+    justify-content: space-between;
+}

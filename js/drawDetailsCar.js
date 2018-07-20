@@ -8,26 +8,7 @@ function drawDetailsCar(){
     carDetailsImg.setAttribute('src', myLink);
     details_car.appendChild(carDetailsImg); 
     const detail = 'menu3';
-    drawPartsOfPartialPlan(detail);
-    // drawPartsOfPartialPlan(detail);
-    // const partsOfPartialPlan = doc.createElement('div');
-    // partsOfPartialPlan.className = 'partsOfPartialPlan row'; 
-    // for(let i=0;i<partsStandartTwoPlusPlan.length;i++){
-    //     let onePartOfPartialPlan = doc.createElement('div');
-    //     onePartOfPartialPlan.className = 'onePartOfPartialPlan';
-    //     let imgPartOfPartialPlan = doc.createElement('img');
-    //     imgPartOfPartialPlan.className = 'imgPartOfPartialPlan';
-    //     imgPartOfPartialPlan.setAttribute('src', 'images/detail/'+partsStandartTwoPlusPlan[i].image);
-    //     let textPartOfPartialPlan = doc.createElement('p');
-    //     textPartOfPartialPlan.className = 'textPartOfPartialPlan';
-    //     textPartOfPartialPlan.innerHTML = partsStandartTwoPlusPlan[i].text;
-
-    //     onePartOfPartialPlan.appendChild(imgPartOfPartialPlan);
-    //     onePartOfPartialPlan.appendChild(textPartOfPartialPlan);
-    //     partsOfPartialPlan.appendChild(onePartOfPartialPlan);
-    //     details_car.appendChild(partsOfPartialPlan);
-    // }
-  
+    drawPartsOfPartialPlan(detail); 
 }
 
 function showPartialPlan(){
